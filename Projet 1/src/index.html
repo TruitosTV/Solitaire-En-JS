@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+    <title>Projet Solitaire en JS</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAFVBMVEUAAAAAAAD///+AgIDAwMCAAAAAAIAAY5KrAAAAAXRSTlMAQObYZgAAAAFiS0dEAmYLfGQAAAAHdElNRQfhDAoMHRkpnFJaAAAAgElEQVQoz2NgwAoEIQDOZ1SCAAG4gDEEGMKViLiAgSOaESaOaEYIIwSCgFxVJAHVUKBAaBCmgCCaFkFjAbglTkpAQhhqDaOIi6OLEtApii4QFSIigoIijkCsDDWDUUQsLVEsLU1EGeZ0oAAIjBQBSLSIKMOiEhpvLopoEScIVgAAic47kFb3MSkAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMTItMTBUMTI6Mjk6MjUtMDU6MDAhZWq4AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTEyLTEwVDEyOjI5OjI1LTA1OjAwUDjSBAAAAABJRU5ErkJggg==" 
+    type="image/png">
+</head>
+    <body style="display: none">
+        <div class="window">
+            <div class="window__inner">
+                <div class="window__heading">
+                    <div class="window__heading-icon"></div>
+                    Projet Solitaire en JS
+                </div>
+                <div class="window__actions">
+                    <button type="button" id="js-reset" class="new-game">Relancer (F5) </button>
+                    <p class="separation">|</p>
+                    <button type="button" class="github" onclick="window.open('https://github.com/TruitosTV');"> Mon Github</button>
+                </div>
+                <div class="window__content">
+                    <div class="window__content-inner">
+                        <div class="solitaire" id="js-solitaire">
+                            <div id="js-finish" class="finish-deck"></div>
+                            <div id="js-board" class="board-deck"></div>
+
+                            <div class="deck">
+                                <div id="js-deck-pile" class="deck__pile"></div>
+                                <div id="js-deck-deal" class="deck__deal"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <audio src="../../Starships.mp3" autoplay controls></audio>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
